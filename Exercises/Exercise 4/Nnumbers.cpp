@@ -3,7 +3,6 @@ using namespace std;
 
 int main(){
 
-    cout<<(int)0.9<<endl;
 
     int N;
     cin >> N;

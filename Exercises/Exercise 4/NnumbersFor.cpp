@@ -5,18 +5,32 @@ int main(){
 
     int N;
     cin >> N;
-    double number, minNum, maxNum;
+    int number;
+    double minNum, maxNum;
     int counter = 0;
 
     cin>>number;
     maxNum = minNum = number; /// Operator = se izpalnqva otlqvo nadqsno
     N--;
 
-    for(int i = 0; i<N; i++){
-
+    if(number % 3 == 1){
+        counter ++;
     }
 
-    cout<<"maxNum = "<<maxNum<<endl<<"minNum = "<<minNum<<endl;
+    for (; N; N--){
+        cin>>number;
+        if(number < minNum){
+            minNum = number;
+        } else if (number > maxNum){
+            maxNum = number;
+        }
+        if(number % 3 == 1){
+            counter++;
+        }
+    }
 
+    cout<<"maxNum = "<<maxNum<<endl<<"minNum = "<<minNum<<endl<<"counter = "<<counter<<endl;
 
+    return 0;
 }
+
