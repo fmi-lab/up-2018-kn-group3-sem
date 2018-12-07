@@ -17,6 +17,8 @@ int main(){
         cout<<endl;
     }
 
+    cout<<"**************************\n";
+
     for(int i = 0; i<6; i++){
         for(int j = 0; j<4; j++){
             cout<<setw(3)<<matrix[j][i];
