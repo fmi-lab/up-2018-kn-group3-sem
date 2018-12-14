@@ -83,6 +83,8 @@ void reverseStrMat(char strMat[100][100][100], int sizeX, int sizeY){
     }
 }
 
+
+
 int main()
 {
     char strM[100][100][100] = {{"asd", "123", "Hello!"}, {"second line", "next element", "world"}, {"third line", "more elements", "I'm a string!"}};
