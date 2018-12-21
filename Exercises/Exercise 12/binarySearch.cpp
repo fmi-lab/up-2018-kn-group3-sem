@@ -2,8 +2,10 @@
 #include<cmath>
 using namespace std;
 
-/// Бяхме забравили да връщаме рекурсивните извиквания и така след като ги изпълним вече излизахме от
-/// конкретния случай и всъщахме -1, ако не сме уцелили числото от първия път.
+/// We had forgotten to return the recursive calls of our function, so after we executed them
+/// we used to return to the outside call and return -1 after the if clause if we hadn't guessed
+/// the searched number from the first try.
+/// Try to remove those returns and see how much times we are going to call the function. (Max 2)
 int binarySearch(int* arr, int lo, int hi, int curr, int searched)
 {
 //    cout<<"lo = "<<lo<<" / "<<"hi = "<<hi<<endl;
