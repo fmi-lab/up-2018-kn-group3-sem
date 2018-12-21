@@ -3,9 +3,9 @@
 using namespace std;
 
 /// We had forgotten to return the recursive calls of our function, so after we executed them
-/// we used to return to the outside call and return -1 after the if clause if we hadn't guessed
-/// the searched number from the first try.
-/// Try to remove those returns and see how much times we are going to call the function. (Max 2)
+/// and found an answer we used to return to the outside call without returning the found value
+/// and return -1 after the if clause if we hadn't guessed the checked number position on the first try.
+/// Try to remove those returns and see the difference.
 int binarySearch(int* arr, int lo, int hi, int curr, int searched)
 {
 //    cout<<"lo = "<<lo<<" / "<<"hi = "<<hi<<endl;
