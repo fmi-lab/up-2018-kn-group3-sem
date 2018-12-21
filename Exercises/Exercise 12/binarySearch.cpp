@@ -2,9 +2,11 @@
 #include<cmath>
 using namespace std;
 
+/// Бяхме забравили да връщаме рекурсивните извиквания и така след като ги изпълним вече излизахме от
+/// конкретния случай и всъщахме -1, ако не сме уцелили числото от първия път.
 int binarySearch(int* arr, int lo, int hi, int curr, int searched)
 {
-    cout<<"lo = "<<lo<<" / "<<"hi = "<<hi<<endl;
+//    cout<<"lo = "<<lo<<" / "<<"hi = "<<hi<<endl;
     if(lo<=hi)
     {
         if(arr[curr] == searched)
@@ -13,11 +15,11 @@ int binarySearch(int* arr, int lo, int hi, int curr, int searched)
         }
         else if(arr[curr] > searched)
         {
-            cout<<arr[curr]<<' '<<searched<<endl;
+//            cout<<arr[curr]<<' '<<searched<<endl;
             return binarySearch(arr, lo, curr-1, ((curr-lo)/2 + lo-1), searched);
         }
         else
-        {   cout<<arr[curr]<<' '<<searched<<endl;
+//        {   cout<<arr[curr]<<' '<<searched<<endl;
             return binarySearch(arr, curr+1, hi, ((hi - (curr+1))/2 + curr+1), searched);
         }
     }
