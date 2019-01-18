@@ -6,6 +6,6 @@ int main(){
     cin>>n;
 //    int arr[n];
     int* arr = new int[n];
-    delete[] arr;
+    delete arr;
     arr = new int[2*n];
 }

@@ -69,4 +69,9 @@ int main(){
 
     cout<<university.students[0]->name<<endl;
 
+    delete s1.name;
+    delete s2.name;
+    delete s3.name;
+    delete[] university.students;
+
 }
