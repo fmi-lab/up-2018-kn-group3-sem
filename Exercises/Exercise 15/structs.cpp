@@ -69,9 +69,9 @@ int main(){
 
     cout<<university.students[0]->name<<endl;
 
-    delete s1.name;
+    delete s1.name; /// When we free the memory allocated by one pointer we use the operator delete.
     delete s2.name;
     delete s3.name;
-    delete[] university.students;
+    delete[] university.students; /// When we free the memory allocated by an array of pointers we use the operator delete[]
 
 }
